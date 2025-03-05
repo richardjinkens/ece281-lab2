@@ -58,7 +58,7 @@ begin
         test_process: process
         begin
         
-        i_Hex_tb <= x"0"; wait for 10ns;
+        i_Hex_tb <= x"0"; wait for 10 ns;
             assert o_seg_tb = "1000000" report "error displaying 0" severity failure;
         i_Hex_tb <= x"1"; wait for 10 ns;
             assert o_seg_tb = "1111001" report "error displaying 1" severity failure;
